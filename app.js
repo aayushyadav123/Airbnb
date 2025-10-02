@@ -65,8 +65,8 @@ const sessionOptions = {
     },
 };
 
-app.get("/", (req, res) =>{
-    res.send("Server is live, use /listings or other routes");
+app.get("/", (req, res) => {
+    res.redirect("/listings");
 });
 
 app.use(session(sessionOptions));
